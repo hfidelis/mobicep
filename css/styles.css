@@ -326,8 +326,7 @@ main {
 
     transform: scale(1.1);
     
-    box-shadow: 6px 6px 20px #bebebe,
-    -10px -10px 20px #ffffff;;
+    box-shadow: 6px 6px 20px #bebebe;
 }
 
 .attr-span {
