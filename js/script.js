@@ -119,8 +119,8 @@ function insertQueryDate() {
     const dateFun = new Date()
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}
     const localDate = dateFun.toLocaleDateString('pt-br', options)
-    const localHour = dateFun.getHours()
-    const localMinute = dateFun.getMinutes()
+    let localHour = dateFun.getHours()
+    let localMinute = dateFun.getMinutes()
 
     localHour = localHour < 10 ? `0${localHour}` : localHour
     localMinute = localMinute < 10 ? `0${localMinute}` : localMinute
