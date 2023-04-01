@@ -122,6 +122,9 @@ function insertQueryDate() {
     const localHour = dateFun.getHours()
     const localMinute = dateFun.getMinutes()
 
+    localHour = localHour < 10 ? `0${localHour}` : localHour
+    localMinute = localMinute < 10 ? `0${localMinute}` : localMinute
+
     dateSpan.innerHTML = `Consulta realizada em: <br> ${localDate} <br> ${localHour}:${localMinute}`
 }
 
