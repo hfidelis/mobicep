@@ -24,6 +24,8 @@ body {
     width: 100vw;
 }
 
+/* Header & Content */
+/* ~~~~~~~~~~~~~~~~ */
 header {
     display: flex;
     align-items: center;
@@ -54,6 +56,8 @@ header {
     color: var(--emphasis-color);
 }
 
+/* Main & Content */
+/* ~~~~~~~~~~~~~ */
 main {
     display: flex;
     align-items: center;
@@ -85,7 +89,8 @@ main {
 
     transition: height 1s, width 1s;
 }
-
+/* Active & Disabled for <section> */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .active {
     display: flex;
     align-items: center;
@@ -97,6 +102,8 @@ main {
     display: none;
 }
 
+/* Content from input-section */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #input-section {
     gap: 1.5rem;
 
@@ -172,6 +179,8 @@ main {
     font-size: 1.5rem;
 }
 
+/* send and back buttons */
+/* ~~~~~~~~~~~~~~~~~~~~ */
 .control-button {
     padding: 1.3em 3em;
     font-size: .8rem;
@@ -199,6 +208,8 @@ main {
     transform: translateY(-1px);
   }
 
+/* Loader */
+/* ~~~~~ */
 #loading-icon {
     display: none;
     text-align: center;
@@ -215,6 +226,8 @@ main {
     color: var(--white-color);
 }
 
+/* data-section content */
+/* ~~~~~~~~~~~~~~~~~~~ */
 #data-section {
     height: 100%;
     width: 100%;
@@ -241,6 +254,8 @@ main {
     font-size: 2.2rem;
 }
 
+/* Data SVG compass animation */
+/* ~~~~~~~~~~~~~~~~~~~~~ */
 .pl {
     display: block;
     width: 3rem;
@@ -308,6 +323,8 @@ main {
     animation-delay: -0.25s;
 }
 
+/* Data div's and content */
+/* ~~~~~~~~~~~~~~~~~~~~~ */
 .data-div {
     height: auto;
     width: auto;
@@ -351,6 +368,8 @@ main {
     font-size: .75rem;
 }
 
+/* Footer & content */
+/* ~~~~~~~~~~~~~~~ */
 footer {
     display: flex;
     align-items: center;
@@ -410,6 +429,8 @@ footer {
     background-color: var(--transparent);
 }
 
+/* Rotate class & Animations */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
 .rotate {
     animation: rotate 2s linear infinite;
 }
