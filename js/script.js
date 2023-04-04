@@ -169,7 +169,7 @@ function themeChange() {
        document.documentElement.style.setProperty('--white-color', '#ffffff')
        document.documentElement.style.setProperty('--shadow', 'rgba(0, 0, 0, 0.1)')
        // main.style.backgroundImage = 'url(../img/light-bg.svg)'
-       main.style.backgroundImage = 'url("https://hfidelis.github.io/mobicep/img/light-bg.svg")'
+       main.style.backgroundImage = "url('https://hfidelis.github.io/mobicep/img/light-bg.svg')"
 
      } else {
 
@@ -178,6 +178,6 @@ function themeChange() {
        document.documentElement.style.setProperty('--white-color', '#f5f5f5')
        document.documentElement.style.setProperty('--shadow', 'rgba(0, 0, 0, 0.5)')
        // main.style.backgroundImage = 'url(../img/dark-bg.svg)'
-       main.style.backgroundImage = 'url("https://hfidelis.github.io/mobicep/img/dark-bg.svg")'
+       main.style.backgroundImage = "url('https://hfidelis.github.io/mobicep/img/dark-bg.svg')"
      }
 }
