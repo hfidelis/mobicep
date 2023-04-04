@@ -4,11 +4,13 @@ const dataSection = document.getElementById('data-section')
 const infoList = document.getElementById('info-list')
 const container = document.getElementById('container')
 const errorAlert = document.getElementById('error-alert')
+const themeRadio = document.getElementById('theme-radio')
 const sendButton = document.getElementById('send-button')
 const backButton = document.getElementById('back-button')
 const loadIcon = document.getElementById('loading-icon')
 const dateSpan = document.getElementById('query-date')
 
+themeRadio.addEventListener('click', themeChange)
 sendButton.addEventListener('click', getCep)
 backButton.addEventListener('click', goBack)
 
@@ -154,4 +156,27 @@ function insertError(element) {
     errorDiv.appendChild(errorSpan)
 
     element.appendChild(errorDiv)
+}
+
+function themeChange() {
+     const checkbox = document.getElementById('theme-radio');
+     const main = document.querySelector('main')
+     
+     if (checkbox.checked) {
+
+       document.documentElement.style.setProperty('--primary-color', '#38838b')
+       document.documentElement.style.setProperty('--emphasis3-color', '#8000a0')
+       document.documentElement.style.setProperty('--white-color', '#ffffff')
+       document.documentElement.style.setProperty('--shadow', 'rgba(0, 0, 0, 0.1)')
+       main.style.backgroundImage = 'url(../img/light-bg.svg)'
+
+     } else {
+
+       document.documentElement.style.setProperty('--primary-color', '#000408')
+       document.documentElement.style.setProperty('--emphasis3-color', '#D95F43')
+       document.documentElement.style.setProperty('--white-color', '#f5f5f5')
+       document.documentElement.style.setProperty('--shadow', 'rgba(0, 0, 0, 0.5)')
+       main.style.backgroundImage = 'url(../img/dark-bg.svg)'
+
+     }
 }
