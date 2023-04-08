@@ -148,7 +148,7 @@ function insertError(element) {
 
     const errorIcon = document.createElement('i')
 
-    errorIcon.className = 'ph ph-warning-octagon'
+    errorIcon.className = 'ph-duotone ph-warning-octagon'
 
     errorSpan.innerHTML += 'CEP inexistente!<br>Tente novamente...'
 
