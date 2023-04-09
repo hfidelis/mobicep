@@ -32,6 +32,7 @@ async function getCep() {
         container.style.height = '300px'
         container.style.width = '300px'
         errorAlert.style.display = 'none'
+        input.style.boxShadow = '0px 2px 24px 4px rgba(0, 0, 0, 0.2)'
 
         const url = `https://viacep.com.br/ws/${userCep}/json/`
 
