@@ -19,10 +19,15 @@ async function getCep() {
     const userCep = input.value
 
     if (userCep.length >= 9 || userCep.length < 8) {
+        input.style.animation = 'shake .2s ease-in-out 0s 2'
+        input.style.boxShadow = '0px 2px 24px 4px var(--emphasis3-color)'
+        setTimeout(() => {
+            input.style.animation = ''
+        }, 250);
         container.style.height = '335px'
         container.style.width = '335px'
         errorAlert.style.display = 'block'
-    } 
+    }  
     else {
         container.style.height = '300px'
         container.style.width = '300px'
